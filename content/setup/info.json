@@ -1,5 +1,5 @@
 {
-  "sitename": "Minimalist",
-  "sitedescription": "A minimalist static site demo using Netlify CMS and Nuxt.js",
+  "sitename": "NetlifyCMS with Nuxt",
+  "sitedescription": "A static site demo using Netlify CMS and Nuxt.js",
   "siteicon": "/icon.png"
 }

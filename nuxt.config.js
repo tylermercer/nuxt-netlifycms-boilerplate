@@ -1,5 +1,5 @@
 import pkg from './package'
-import siteinfo from './content/setup/info'
+import info from './content/setup/info'
 
 export default {
   mode: 'universal',
@@ -8,7 +8,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: info.sitename,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

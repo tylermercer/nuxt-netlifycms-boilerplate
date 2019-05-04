@@ -1,4 +1,5 @@
 import pkg from './package'
+import siteinfo from './content/setup/info'
 
 export default {
   mode: 'universal',
@@ -40,6 +41,7 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/markdownit',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],

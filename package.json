@@ -1,7 +1,7 @@
 {
   "name": "nuxt-netlifycms-boilerplate",
   "version": "0.1.0",
-  "description": "My template for using NetlifyCMS with Nuxt",
+  "description": "A simple boilerplate for using NetlifyCMS with Nuxt",
   "author": "Tyler Mercer",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.6.3",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0"
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/markdownit": "github:syffs/nuxtv2-markdownit"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

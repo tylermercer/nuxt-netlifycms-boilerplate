@@ -2,7 +2,7 @@
   <div class="main">
     <logo/>
     <h1>Hello World!</h1>
-    <p v-for="post in blogPosts">{{post.title}}</p>
+    <p v-for="post in blogPosts">{{post.title}}, {{post.date}}</p>
   </div>
 </template>
 

@@ -15,6 +15,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date", format: "Do MMM YYYY"}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
@@ -25,7 +26,6 @@ collections:
     format: 'json'
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Setup"

@@ -2,6 +2,7 @@
   <div class="main">
     <logo/>
     <h1>Hello World!</h1>
+    <p v-for="post in blogPosts">{{post.name}}</p>
   </div>
 </template>
 
@@ -10,7 +11,12 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+  },
+  computed: {
+    blogPosts() {
+      return this.$store.state.blogPosts;
+    }
   }
 }
 </script>

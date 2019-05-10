@@ -1,7 +1,10 @@
 <template lang="html">
   <div class="main">
     <h1>Hello World!</h1>
-    <p v-for="post in blogPosts"><a :href="post._path">{{post.title}}</a></p>
+    <div class="posts-list">
+      <h2 class="posts-list-title">Posts</h2>
+      <p class="post-link" v-for="post in blogPosts"><a :href="post._path">{{post.title}}</a></p>
+    </div>
   </div>
 </template>
 
@@ -21,6 +24,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.posts-list {
+  width: 400px;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 35px;
+}
+.post-link {
+  padding-top: 10px;
+  font-size: 1.2em;
+}
 .main {
   display: flex;
   flex-direction: column;

@@ -9,6 +9,14 @@
 <script>
 export default {
   async asyncData({ params, app, payload, route, store }) {
+    /*
+    Interestingly, if you just return the raw post object as it is imported,
+    Nuxt fails to build, but if you create your own object with the data you
+    need, it works. The issue is discussed here, but apparently it wasn't
+    completely fixed. https://github.com/nuxt-community/apollo-module/issues/163
+    However, I like the code more this way anyway--it's more explicit what
+    you're bringing in from the JSON.
+    */
     let post = await import(`~/content/blog/${params.slug}.json`);
     return {
       date: post.date,

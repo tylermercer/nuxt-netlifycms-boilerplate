@@ -1,9 +1,15 @@
 <template>
   <div class="layout">
-    <div class="logo">
-      <logo/>
+    <div class="header">
+      <a class="logo" href="/"><logo/></a>
     </div>
     <nuxt />
+    <div class="footer">
+      <div class="footer-inner">
+        <p><a href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">View this project on Github</a></p>
+        <p><a href="/admin">NetlifyCMS Admin Login</a></p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -18,12 +24,28 @@ export default {
 </script>
 
 <style>
-.logo {
+
+.header, .footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 40px;
+}
+
+.footer-inner {
+  background-color: whitesmoke;
+  width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 html {

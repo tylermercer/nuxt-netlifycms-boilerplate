@@ -2,7 +2,8 @@
   <div class="post">
     <h1>{{title}}</h1>
     <p class="date">Posted by {{author}} on {{date}}</p>
-    <div v-html="$md.render(body)"/>
+    <div class="post-content" v-html="$md.render(body)"/>
+    <p class="back-link"><a href="/">Back</a></p>
   </div>
 </template>
 
@@ -29,11 +30,15 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.back-link, .date, .post-content {
+  padding-top: 10px;
+}
+
 .date {
   color: darkgray;
 }
 .post {
-  max-width: 400px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;

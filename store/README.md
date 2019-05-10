@@ -10,4 +10,5 @@ Creating a file in this directory automatically activates the option in the fram
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/vuex-store).
 
 Tyler's Note
->I used actions in the store to load the blog posts, the pages, and the site information.
+>I used actions in the store to load the blog posts, the pages, and the site
+information.

@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="main">
-    <h1>Hello World!</h1>
+    <h1>NetlifyCMS & Nuxt Boilerplate</h1>
     <div class="posts-list">
       <h2 class="posts-list-title">Posts</h2>
       <p class="post-link" v-for="post in blogPosts"><a :href="post._path">{{post.title}}</a></p>
@@ -25,14 +25,13 @@ export default {
 
 <style lang="css" scoped>
 .posts-list {
-  width: 400px;
+  width: 600px;
   background-color: whitesmoke;
   padding: 20px;
   margin-top: 35px;
 }
 .post-link {
   padding-top: 10px;
-  font-size: 1.2em;
 }
 .main {
   display: flex;

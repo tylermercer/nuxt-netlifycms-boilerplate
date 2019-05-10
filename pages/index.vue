@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="main">
-    <h1>NetlifyCMS & Nuxt Boilerplate</h1>
+    <h1>{{siteInfo.sitename}}</h1>
+    <p>{{siteInfo.sitedescription}}</p>
     <div class="posts-list">
       <h2 class="posts-list-title">Posts</h2>
       <p class="post-link" v-for="post in blogPosts"><a :href="post._path">{{post.title}}</a></p>
@@ -18,6 +19,9 @@ export default {
   computed: {
     blogPosts() {
       return this.$store.state.blogPosts;
+    },
+    siteInfo() {
+      return this.$store.state.siteInfo;
     }
   }
 }

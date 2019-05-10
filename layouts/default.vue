@@ -1,10 +1,31 @@
 <template>
-  <div>
+  <div class="layout">
+    <div class="logo">
+      <logo/>
+    </div>
     <nuxt />
   </div>
 </template>
 
+<script>
+import Logo from '~/components/Logo.vue'
+
+export default {
+  components: {
+    Logo,
+  }
+}
+</script>
+
 <style>
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

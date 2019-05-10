@@ -4,10 +4,8 @@ import path from 'path'
 import glob from 'glob'
 
 var dynamicRoutes = getDynamicPaths({
-  '/blog': 'blog/posts/*.json',
-  '/page': 'page/posts/*.json',
-  '/category': 'categories/posts/*.json',
-  '/tagged': 'tags/posts/*.json'
+  '/blog': 'blog/*.json',
+  '/page': 'page/*.json',
 });
 
 console.log(dynamicRoutes);
@@ -51,11 +49,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/markdownit',
-    '@nuxtjs/axios',
+    '@nuxtjs/axios', // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/pwa',
   ],
+  markdownit: {
+    injected: true,
+    preset: 'default',
+    breaks: true,
+    html: true
+
+
+  },
   /*
   ** Axios module configuration
   */
@@ -71,7 +76,10 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
+    },
+  },
+  generate: {
+    routes: dynamicRoutes
   }
 }
 

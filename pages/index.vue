@@ -1,8 +1,7 @@
 <template lang="html">
   <div class="main">
-    <logo/>
     <h1>Hello World!</h1>
-    <p v-for="post in blogPosts">{{post.title}}, {{post.date}}</p>
+    <p v-for="post in blogPosts"><a :href="post._path">{{post.title}}</a></p>
   </div>
 </template>
 
@@ -27,6 +26,5 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
 }
 </style>

@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="post">
-    <h1>{{title}}</h1>
+    <h1 class="title">{{title}}</h1>
     <p class="date">Posted by {{author}} on {{date}}</p>
-    <div class="post-content" v-html="$md.render(body)"/>
-    <p class="back-link"><n-link to="/">Back</n-link></p>
+    <div class="body" v-html="$md.render(body)"/>
+    <p class="back"><a class="back-link" @click="$router.back()">Back</a></p>
   </div>
 </template>
 
@@ -30,18 +30,19 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.back-link, .date, .post-content {
+.back, .date, .body {
   padding-top: 10px;
+}
+.back-link {
+  text-decoration: underline;
+  color: #3b8070;
+  cursor: pointer;
 }
 
 .date {
   color: darkgray;
 }
 .post {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   background-color: whitesmoke;
   padding: 20px;
 }

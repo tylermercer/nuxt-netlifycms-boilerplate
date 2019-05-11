@@ -4,26 +4,24 @@
       <!-- This link is an n-link because it links to another Nuxt route -->
       <n-link class="logo" to="/"><logo/></n-link>
     </div>
-    <nuxt />
+    <nuxt class="content" />
     <div class="footer">
-      <div class="footer-inner">
-        <p>
-          <!-- This link is not an n-link because it is external -->
-          <a target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">
-            View this project on Github
-          </a>
-        </p>
-        <p>
-          <!-- This is not an n-link because the NetlifyCMS admin page is static.
-          If you make it an n-link, you'll get a "Page could not be found" when
-          you click it. -->
-          <a href="/admin">
-            NetlifyCMS Admin Login
-         </a>
-       </p>
-      </div>
+      <p>
+        <!-- This link is not an n-link because it is external -->
+        <a target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">
+          View this project on Github
+        </a>
+      </p>
+      <p>
+        <!-- This is not an n-link because the NetlifyCMS admin page is static.
+        If you make it an n-link, you'll get a "Page could not be found" when
+        you click it. -->
+        <a href="/admin">
+          NetlifyCMS Admin Login
+       </a>
+     </p>
     </div>
   </div>
 </template>
@@ -44,29 +42,30 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
-  padding-top: 40px;
+  padding: 40px 20px 10px 20px;
 }
 
-.header, .footer {
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
   width: 100%;
+}
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer {
-  margin-top: 40px;
-}
-
-.footer-inner {
   background-color: whitesmoke;
   width: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.footer > * {
+  padding: 20px;
 }
 
 .logo {

@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="header">
-      <a class="logo" href="/"><logo/></a>
+      <n-link class="logo" to="/"><logo/></n-link>
     </div>
     <nuxt />
     <div class="footer">
@@ -14,11 +14,9 @@
           </a>
         </p>
         <p>
-          <a target="_blank"
-             rel="noopener noreferrer"
-             href="/admin">
+          <n-link to="/admin">
             NetlifyCMS Admin Login
-         </a>
+         </n-link>
        </p>
       </div>
     </div>

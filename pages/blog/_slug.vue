@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
     <p class="date">Posted by {{author}} on {{date}}</p>
     <div class="post-content" v-html="$md.render(body)"/>
-    <p class="back-link"><a href="/">Back</a></p>
+    <p class="back-link"><n-link to="/">Back</n-link></p>
   </div>
 </template>
 

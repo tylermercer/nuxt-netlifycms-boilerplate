@@ -6,8 +6,20 @@
     <nuxt />
     <div class="footer">
       <div class="footer-inner">
-        <p><a href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">View this project on Github</a></p>
-        <p><a href="/admin">NetlifyCMS Admin Login</a></p>
+        <p>
+          <a target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">
+            View this project on Github
+          </a>
+        </p>
+        <p>
+          <a target="_blank"
+             rel="noopener noreferrer"
+             href="/admin">
+            NetlifyCMS Admin Login
+         </a>
+       </p>
       </div>
     </div>
   </div>
@@ -65,6 +77,14 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+a:link {
+  color: #41b883;
+}
+
+a:visited {
+  color: #3b8070;
 }
 
 .button--green {

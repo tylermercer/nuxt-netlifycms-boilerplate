@@ -39,18 +39,30 @@ export default {
 </script>
 
 <style>
+.layout {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  padding-top: 40px;
+}
 
 .header, .footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 40px;
 }
 
 .footer-inner {
   background-color: whitesmoke;
-  width: 600px;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: row;

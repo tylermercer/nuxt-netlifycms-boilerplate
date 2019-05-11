@@ -29,7 +29,7 @@ export default {
 
 <style lang="css" scoped>
 .posts-list {
-  width: 600px;
+  width: 100%;
   background-color: whitesmoke;
   padding: 20px;
   margin-top: 35px;

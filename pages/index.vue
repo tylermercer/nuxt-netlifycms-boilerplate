@@ -1,7 +1,9 @@
 <template lang="html">
   <div class="main">
-    <h1>{{siteInfo.sitename}}</h1>
-    <p>{{siteInfo.sitedescription}}</p>
+    <div class="main-header">
+      <h1>{{siteInfo.sitename}}</h1>
+      <p>{{siteInfo.sitedescription}}</p>
+    </div>
     <div class="posts-list">
       <h2 class="posts-list-title">Posts</h2>
       <p class="post-link" v-for="post in blogPosts"><n-link :to="post._path">{{post.title}}</n-link></p>
@@ -42,5 +44,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.main-header {
+  text-align: center;
 }
 </style>

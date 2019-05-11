@@ -1,12 +1,14 @@
 <template>
   <div class="layout">
     <div class="header">
+      <!-- This link is an n-link because it links to another Nuxt route -->
       <n-link class="logo" to="/"><logo/></n-link>
     </div>
     <nuxt />
     <div class="footer">
       <div class="footer-inner">
         <p>
+          <!-- This link is not an n-link because it is external -->
           <a target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/tylermercer/nuxt-netlifycms-boilerplate">
@@ -14,9 +16,12 @@
           </a>
         </p>
         <p>
-          <n-link to="/admin">
+          <!-- This is not an n-link because the NetlifyCMS admin page is static.
+          If you make it an n-link, you'll get a "Page could not be found" when
+          you click it. -->
+          <a href="/admin">
             NetlifyCMS Admin Login
-         </n-link>
+         </a>
        </p>
       </div>
     </div>

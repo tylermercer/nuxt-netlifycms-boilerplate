@@ -2,7 +2,7 @@
   <div class="layout">
     <div class="header">
       <!-- This link is an n-link because it links to another Nuxt route -->
-      <n-link class="logo" to="/"><logo/></n-link>
+      <n-link class="logo" to="/"><Logo/></n-link>
     </div>
     <nuxt class="content" />
     <div class="footer">

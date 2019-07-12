@@ -16,7 +16,8 @@
     "@nuxtjs/markdownit": "^1.2.4",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.6.3"
+    "nuxt": "^2.6.3",
+    "lodash.template": ">=4.5.0"
   },
   "devDependencies": {
     "glob": "^7.1.3",

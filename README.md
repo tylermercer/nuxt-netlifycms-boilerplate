@@ -1,3 +1,10 @@
+# ⚠ DEPRECATED - NOT RECOMMENDED FOR USE ⚠
+This boilerplate uses an older version of Nuxt and some now-unnecessary techniques, like loading content into a Vuex store. I recommend using [`@nuxt/content`](https://content.nuxtjs.org/) instead. Check out [the docs](https://content.nuxtjs.org/fetching) to see how loading content with `@nuxt/content` works. Once you have your website displaying content, use the [NetlifyCMS Docs]() to configure NetlifyCMS to allow you to edit that content.
+
+If you would like to update this repository to use `@nuxt/content`, please feel free to open a PR. 🙂
+
+## Nuxt NetlifyCMS Boilerplate
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/tylermercer/nuxt-netlifycms-boilerplate)
 
 Live demo [here](https://nuxt-netlifycms-boilerplate.netlify.com/).
